@@ -16,10 +16,10 @@
         ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
     </style>
 </head>
-<body class="h-screen flex flex-col md:flex-row overflow-hidden opacity-0" id="app">
+<body class="h-screen flex flex-col md:flex-row overflow-hidden" id="app">
 
 <!-- PANTALLA INICIAL -->
-<div id="overlay" class="fixed inset-0 bg-black/90 z-[9999] flex items-center justify-center">
+<div id="overlay" class="fixed inset-0 bg-black z-[9999] flex items-center justify-center">
     <div class="glass p-8 rounded-xl w-full max-w-md text-center space-y-4">
 
         <h2 class="text-2xl text-white font-serif">Acceso a la guía</h2>
@@ -45,6 +45,11 @@
 
     </div>
 </div>    
+
+    <!-- 🔴 TEST -->
+<div style="position:fixed; top:10px; left:10px; color:white; z-index:10000;">
+    TEST
+</div>
  
     <!-- ASIDE -->
     <aside class="w-full md:w-72 bg-slate-950 border-r border-slate-800 flex flex-col z-20 shadow-2xl">
