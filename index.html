@@ -16,8 +16,36 @@
         ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
     </style>
 </head>
-<body class="h-screen flex flex-col md:flex-row overflow-hidden">
+<body class="h-screen flex flex-col md:flex-row overflow-hidden opacity-0" id="app">
 
+<!-- PANTALLA INICIAL -->
+<div id="overlay" class="fixed inset-0 bg-black/90 z-[9999] flex items-center justify-center">
+    <div class="glass p-8 rounded-xl w-full max-w-md text-center space-y-4">
+
+        <h2 class="text-2xl text-white font-serif">Acceso a la guía</h2>
+
+        <input 
+            type="text" 
+            id="dni" 
+            placeholder="Ingresa tu DNI"
+            class="w-full p-3 rounded bg-slate-900 text-white border border-slate-700 focus:outline-none"
+        >
+
+        <label class="flex items-center gap-2 text-sm text-slate-300 justify-center">
+            <input type="checkbox" id="check">
+            Me comprometo a leer y seguir la guía
+        </label>
+
+        <button onclick="ingresar()" 
+            class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded text-white font-semibold w-full">
+            Ingresar
+        </button>
+
+        <p id="error" class="text-red-400 text-sm hidden"></p>
+
+    </div>
+</div>    
+ 
     <!-- ASIDE -->
     <aside class="w-full md:w-72 bg-slate-950 border-r border-slate-800 flex flex-col z-20 shadow-2xl">
         <div class="p-6 border-b border-slate-800 flex items-center gap-3 cursor-pointer" onclick="renderContent('welcome')">
@@ -1423,10 +1451,46 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+        window.onload = function () {
+    const dniGuardado = localStorage.getItem("dni");
+
+    if (dniGuardado) {
+        entrarDirecto();
+    }
+};
+
+function ingresar() {
+    const dni = document.getElementById("dni").value.trim();
+    const check = document.getElementById("check").checked;
+    const error = document.getElementById("error");
+
+    if (!/^\d{8}$/.test(dni)) {
+        error.innerText = "Ingresa un DNI válido (8 dígitos)";
+        error.classList.remove("hidden");
+        return;
+    }
+
+    if (!check) {
+        error.innerText = "Debes aceptar el compromiso";
+        error.classList.remove("hidden");
+        return;
+    }
+
+    localStorage.setItem("dni", dni);
+
+    entrarDirecto();
+}
+
+function entrarDirecto() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("app").classList.remove("opacity-0");
+}
+
 
         // INICIO
         renderMenu();
         renderContent('welcome');
+        
     </script>
 </body>
 </html>
