@@ -61,7 +61,7 @@ textarea{
 }        
     </style>
 </head>
-<body class="min-h-screen flex flex-col md:flex-row bg-slate-950 overflow-hidden" id="app">
+<body class="min-h-screen flex flex-col md:flex-row bg-slate-950 overflow-x-hidden" id="app">
 
 <!-- PANTALLA INICIAL -->
 <div id="overlay" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-center justify-center p-4">
@@ -142,7 +142,7 @@ textarea{
     </aside>
 
     <!-- MAIN -->
-    <main class="flex-1 relative bg-gradient-to-br from-slate-950 to-[#020617] overflow-hidden flex flex-col min-w-0">
+    <main class="flex-1 relative bg-gradient-to-br from-slate-950 to-[#020617] flex flex-col min-w-0 overflow-y-auto">
         <div class="h-16 border-b border-slate-800 flex items-center px-6 gap-4 bg-slate-950/90 backdrop-blur z-10">
             <i data-lucide="search" class="text-slate-500"></i>
             <input type="text" id="search" placeholder="Buscar (ej: ciclo 0, pagos, inglés)..." class="bg-transparent w-full text-white focus:outline-none placeholder-slate-600">
