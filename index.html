@@ -14,9 +14,54 @@
         .active-tab { background: #dc2626; color: #f9fafb; font-weight: bold; border-left: 4px solid #ffffff; }
         ::-webkit-scrollbar { width: 6px; background: #020617; }
         ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
+
+*{
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+table{
+    width:100%;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Evita zoom raro en iPhone */
+input,
+select,
+textarea{
+    font-size:16px;
+}
+
+/* Mejora responsive en móviles */
+@media (max-width: 768px){
+
+    h1{
+        font-size:1.8rem !important;
+    }
+
+    h2{
+        font-size:1.5rem !important;
+    }
+
+    h3{
+        font-size:1.1rem !important;
+    }
+
+    .glass{
+        padding:1rem !important;
+    }
+
+}        
     </style>
 </head>
-<body class="h-screen flex flex-col md:flex-row overflow-hidden" id="app">
+<body class="min-h-screen flex flex-col md:flex-row bg-slate-950 overflow-hidden" id="app">
 
 <!-- PANTALLA INICIAL -->
 <div id="overlay" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-center justify-center p-4">
@@ -82,7 +127,7 @@
 </div>   
  
     <!-- ASIDE -->
-    <aside class="w-full md:w-72 bg-slate-950 border-r border-slate-800 flex flex-col z-20 shadow-2xl">
+    <aside class="hidden md:flex md:w-72 bg-slate-950 border-r border-slate-800 flex-col z-20 shadow-2xl">
         <div class="p-6 border-b border-slate-800 flex items-center gap-3 cursor-pointer" onclick="renderContent('welcome')">
             <div class="w-10 h-10 bg-red-600 rounded flex items-center justify-center text-2xl font-bold text-slate-50">UE</div>
             <div>
@@ -97,13 +142,13 @@
     </aside>
 
     <!-- MAIN -->
-    <main class="flex-1 relative bg-gradient-to-br from-slate-950 to-[#020617] overflow-hidden flex flex-col">
+    <main class="flex-1 relative bg-gradient-to-br from-slate-950 to-[#020617] overflow-hidden flex flex-col min-w-0">
         <div class="h-16 border-b border-slate-800 flex items-center px-6 gap-4 bg-slate-950/90 backdrop-blur z-10">
             <i data-lucide="search" class="text-slate-500"></i>
             <input type="text" id="search" placeholder="Buscar (ej: ciclo 0, pagos, inglés)..." class="bg-transparent w-full text-white focus:outline-none placeholder-slate-600">
         </div>
         
-        <div id="viewer" class="flex-1 overflow-y-auto p-6 md:p-10 scroll-smooth"></div>
+        <div id="viewer" class="flex-1 overflow-y-auto p-4 sm:p-6 md:p-10 scroll-smooth w-full">
     </main>
 
     <script>
