@@ -270,113 +270,178 @@ textarea{
             },
 
            // I. MATRÍCULA
-            I: {
-                title: "I. Matrícula",
-                icon: "file-check",
-                html: `
-                <div class="max-w-4xl mx-auto animate-[fadeIn_0.5s]">
-                    <h2 class="text-3xl text-white font-serif mb-6">I. Proceso de Matrícula</h2>
-                    <div class="glass p-8 rounded-xl space-y-6">
-                        <p class="text-lg text-slate-300">
-                            En el primer ciclo, <strong>los alumnos ingresantes no se matriculan a sí mismos, ya que la matrícula es gestionada directamente por la universidad.</strong> 
-                            <span class="text-red-400 font-semibold"> Los horarios y aulas de clase serán entregados durante la Semana de Inducción.</span>
-                        </p>
+I: {
+    title: "I. Matrícula",
+    icon: "file-check",
+    html: `
+    <div class="max-w-4xl mx-auto animate-[fadeIn_0.5s]">
+        <h2 class="text-3xl text-white font-serif mb-6">
+            I. Proceso de Matrícula
+        </h2>
 
-                        <p class="text-lg text-slate-300">
-                            Se considera ingresante del Pregrado de la Universidad ESAN a toda persona que haya aprobado el proceso de admisión y cumpla con la presentación de los requisitos establecidos en el Reglamento de Admisión.
-                        </p>
+        <div class="glass p-8 rounded-xl space-y-6">
 
-                        <ul class="list-disc pl-6 space-y-4 text-slate-300">
+            <p class="text-lg text-slate-300">
+                En el primer ciclo,
+                <strong>
+                    los alumnos ingresantes no se matriculan a sí mismos,
+                    ya que la matrícula es gestionada directamente por la universidad.
+                </strong>
 
-                            <li>
-                                <p class="text-lg text-slate-300"><strong>Requisitos de Matrícula:</strong></p>
-                        <p class="mt-2">
-                            Para que la universidad proceda con la matrícula del ingresante, el estudiante deberá enviar a su asesor(a) de inscripciones, antes del inicio de la Semana de Inducción, lo siguiente:
-                        </p>
-                                <ul class="list-disc pl-6 space-y-1">
-                                    <li>Voucher de pago correspondiente a la matrícula y a la primera boleta.</li>
+                <span class="text-red-400 font-semibold">
+                    Los horarios y aulas de clase serán entregados durante la Semana de Inducción.
+                </span>
+            </p>
 
-                        <li>Documentación requerida según la modalidad de ingreso:
+            <p class="text-lg text-slate-300">
+                Se considera ingresante del Pregrado de la Universidad ESAN a toda persona
+                que haya aprobado el proceso de admisión y cumpla con la presentación
+                de los requisitos establecidos en el Reglamento de Admisión.
+            </p>
+
+            <ul class="list-disc pl-6 space-y-4 text-slate-300">
+
+                <li>
+                    <p class="text-lg text-slate-300">
+                        <strong>Requisitos para la Matrícula:</strong>
+                    </p>
+
+                    <p class="mt-2">
+                        Para que la universidad proceda con la matrícula del ingresante,
+                        el estudiante deberá enviar a su asesor(a) de inscripciones,
+                        antes del inicio de la Semana de Inducción, lo siguiente:
+                    </p>
+
+                    <ul class="list-disc pl-6 space-y-3 mt-4">
+
+                        <li>
+                            Voucher de pago correspondiente a la matrícula y a la primera boleta.
+                        </li>
+
+                        <li>
+                            Documentación requerida según la modalidad de ingreso:
 
                             <ul class="pl-6 mt-4 space-y-3">
 
                                 <li class="flex items-start gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-white-400 mt-1"></i>
-                                    <span>Certificado de estudios secundarios (1.° al 5.° año).</span>
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400 mt-1"></i>
+                                    <span>
+                                        Certificado de estudios secundarios
+                                        (1.° al 5.° año).
+                                    </span>
                                 </li>
 
                                 <li class="flex items-start gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-white-400 mt-1"></i>
-                                    <span>Copia del Documento Nacional de Identidad (DNI).</span>
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400 mt-1"></i>
+                                    <span>
+                                        Copia del Documento Nacional de Identidad (DNI).
+                                    </span>
                                 </li>
 
                                 <li class="flex items-start gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-white-400 mt-1"></i>
-                                    <span>Fotografía digital del ingresante.</span>
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400 mt-1"></i>
+                                    <span>
+                                        Fotografía digital del ingresante.
+                                    </span>
                                 </li>
 
                                 <li class="flex items-start gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-white-400 mt-1"></i>
-                                    <span>Ficha de datos completa.</span>
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400 mt-1"></i>
+                                    <span>
+                                        Ficha de datos completa.
+                                    </span>
                                 </li>
 
                                 <li class="flex items-start gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-white-400 mt-1"></i>
-                                    <span>Declaración jurada firmada.</span>
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400 mt-1"></i>
+                                    <span>
+                                        Declaración jurada firmada.
+                                    </span>
                                 </li>
 
                                 <li class="flex items-start gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-white-400 mt-1"></i>
-                                    <span>Formato de beneficio ofrecido, de corresponder.</span>
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400 mt-1"></i>
+                                    <span>
+                                        Formato de beneficio ofrecido, de corresponder.
+                                    </span>
                                 </li>
 
                             </ul>
                         </li>
-                    <li>
+
+                        <li>
                             <span class="font-semibold text-white">
                                 Ingresantes por Traslado Externo o Bachillerato Internacional:
                             </span>
-                                <p class="mt-2">Además de los requisitos antes mencionados, los estudiantes que ingresen bajo la modalidad de Traslado Externo o Bachillerato Internacional deberán:</p>
+
+                            <p class="mt-2">
+                                Además de los requisitos antes mencionados,
+                                los estudiantes que ingresen bajo la modalidad
+                                de Traslado Externo o Bachillerato Internacional deberán:
+                            </p>
 
                             <ul class="pl-6 mt-4 space-y-3">
 
                                 <li class="flex items-start gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-white-400 mt-1"></i>
-                                    <span>Realizar el trámite de convalidación correspondiente, solicitando el formato y las indicaciones a su asesor(a) de inscripción. </span>
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400 mt-1"></i>
+                                    <span>
+                                        Realizar el trámite de convalidación correspondiente,
+                                        solicitando el formato y las indicaciones a su asesor(a)
+                                        de inscripción.
+                                    </span>
                                 </li>
 
                                 <li class="flex items-start gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-white-400 mt-1"></i>
-                                    <span>Enviar a su asesor(a) de inscripción el Acta de Convalidación una vez emitida. </span>
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400 mt-1"></i>
+                                    <span>
+                                        Enviar a su asesor(a) de inscripción el Acta de
+                                        Convalidación una vez emitida.
+                                    </span>
                                 </li>
 
                                 <li class="flex items-start gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-white-400 mt-1"></i>
-                                    <span>Efectuar el pago por convalidaciones y remitir el voucher correspondiente. </span>
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400 mt-1"></i>
+                                    <span>
+                                        Efectuar el pago por convalidaciones y remitir
+                                        el voucher correspondiente.
+                                    </span>
                                 </li>
 
                                 <li class="flex items-start gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-white-400 mt-1"></i>
-                                    <span>Presentar la Constancia de Bachillerato Internacional (no aplica para Traslados Externos).</span>
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400 mt-1"></i>
+                                    <span>
+                                        Presentar la Constancia de Bachillerato Internacional
+                                        (no aplica para Traslados Externos).
+                                    </span>
                                 </li>
 
                             </ul>
                         </li>
-                                </ul>
-                            </li>
 
-                        </ul>
+                    </ul>
+                </li>
 
-                        
-                        <div class="bg-slate-900/80 p-4 rounded border border-slate-700 text-sm text-slate-100 flex items-start gap-3">
-                            <i data-lucide="info" class="w-4 h-4 mt-0.5 text-slate-300"></i>
-                            <span>
-                                <strong>IMPORTANTE:</strong> No se completará la matrícula del/de la ingresante hasta que cumpla con la entrega de todos los requisitos de matrícula. Deben estar atentos a las fechas límite de entrega de documentos que los asesores de inscripción les indicarán y que serán informadas a sus correos electrónicos. Antes del inicio de la Semana de Inducción, toda la documentación debe haber sido entregada.
-                            </span>
-                        </div>
-                    </div>
-                </div>`
-            },
+            </ul>
+
+            <div class="bg-slate-900/80 p-4 rounded border border-slate-700 text-sm text-slate-100 flex items-start gap-3">
+                <i data-lucide="info" class="w-4 h-4 mt-0.5 text-slate-300"></i>
+
+                <span>
+                    <strong>IMPORTANTE:</strong>
+                    No se completará la matrícula del/de la ingresante hasta que cumpla
+                    con la entrega de todos los requisitos de matrícula.
+                    Deben estar atentos a las fechas límite de entrega de documentos
+                    que los asesores de inscripción les indicarán y que serán informadas
+                    a sus correos electrónicos.
+
+                    Antes del inicio de la Semana de Inducción,
+                    toda la documentación debe haber sido entregada.
+                </span>
+            </div>
+
+        </div>
+    </div>`
+},
 
             // II. ESCALAS DE PAGO
             II: {
