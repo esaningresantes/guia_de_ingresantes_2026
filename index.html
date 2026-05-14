@@ -193,21 +193,7 @@ textarea{
             En este catálogo interactivo encontrarás la información acerca de los procesos a seguir para el inicio de tus estudios universitarios, así como para absolver las consultas que puedas tener.
         </p>
         
-<!-- BOTÓN PDF -->
-<div class="flex justify-center mb-8">
 
-    <a
-    href="./Guia_Ingresantes_2026_2.pdf"
-    download
-    class="bg-red-600 hover:bg-red-700 transition px-6 py-3 rounded-xl text-white font-semibold flex items-center gap-3 shadow-lg hover:scale-105">
-
-        <i data-lucide="download" class="w-5 h-5"></i>
-
-        Descargar Guía para Ingresantes 2026-2.pdf
-
-    </a>
-
-</div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
             <!-- I -->
             <button onclick="renderContent('I')" class="glass p-4 rounded-xl hover:bg-slate-900 transition border-l-4 border-red-500">
@@ -281,6 +267,22 @@ textarea{
                 <p class="text-xs text-slate-400">Fechas clave del ciclo 2026-2.</p>
             </button>
         </div>
+        
+        <!-- BOTÓN PDF -->
+<div class="flex justify-center mb-8">
+
+    <a
+    href="./Guia_Ingresantes_2026_2.pdf"
+    download
+    class="bg-red-600 hover:bg-red-700 transition px-6 py-3 rounded-xl text-white font-semibold flex items-center gap-3 shadow-lg hover:scale-105">
+
+        <i data-lucide="download" class="w-5 h-5"></i>
+
+        Descargar Guía para Ingresantes 2026-2.pdf
+
+    </a>
+
+</div>
     </div>`
             },
 
@@ -1206,11 +1208,29 @@ XI: {
     <div class="space-y-6">
 
         <!-- Título agrupador -->
-        <div class="bg-yellow-400/15 border-l-4 border-yellow-400 px-4 py-3 rounded-lg">
-            <h3 class="text-red-400 font-semibold tracking-normal">
-                Ingresantes NO matriculados (sin horarios de clases)
-            </h3>
-        </div>
+<div class="bg-yellow-400/15 border-l-4 border-yellow-400 px-4 py-4 rounded-lg">
+
+    <h3 class="text-red-400 text-center leading-relaxed">
+
+        <span class="text-[32px] font-bold align-middle">I</span><span class="text-[18px] uppercase">NGRESANTES</span>
+
+        <span class="text-[32px] font-bold align-middle ml-2">NO</span>
+
+        <span class="text-[32px] font-bold align-middle ml-2">M</span><span class="text-[18px] uppercase">ATRICULADOS</span>
+
+        <span class="text-[18px]">(</span>
+
+        <span class="text-[32px] font-bold align-middle">S</span><span class="text-[18px] uppercase">IN</span>
+
+        <span class="text-[32px] font-bold align-middle ml-1">H</span><span class="text-[18px] uppercase">ORARIOS DE</span>
+
+        <span class="text-[32px] font-bold align-middle ml-1">C</span><span class="text-[18px] uppercase">LASES</span>
+
+        <span class="text-[18px]">)</span>
+
+    </h3>
+
+</div>
 
         <!-- Reserva de admisión -->
         <div class="space-y-3">
@@ -1702,7 +1722,7 @@ XI: {
                 </div>
             </div>
             
-            <div class="glass p-4 rounded border-2 border-yellow-500/70 flex items-start gap-4 md:col-span-2 md:max-w-xl mx-auto">
+            <div class="glass p-4 rounded border-2 border-yellow-500/70 flex items-start gap-4">
                 <div class="bg-slate-900 p-3 rounded text-yellow-500">
                     <i data-lucide="wallet"></i>
                 </div>
@@ -1715,11 +1735,40 @@ XI: {
                         </a>
                     </p>
                     <p class="text-[11px] text-slate-400 mt-1">
-                        WhatsApp: +51 975036407
+                        ESCRIBIR al WhatsApp: +51 975036407
                     </p>
                         <p class="text-[11px] text-slate-400 mt-1">
                         Horario de Atención: Lunes a viernes de 8:00 am - 5:00 pm
                     </p>
+                </div>
+            </div>
+
+            <div class="glass p-4 rounded border-2 border-pink-500/70 flex items-start gap-4">
+                <div class="bg-slate-900 p-3 rounded text-pink-500">
+                    <i data-lucide="wallet"></i>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm">Dimensión Internacional</h4>
+                    <p class="text-xs text-slate-300">
+                        Correo: 
+                        <a href="mailto:exchange@esan.edu.pe" class="text-red-400 hover:underline">
+                            exchange@esan.edu.pe
+                        </a>
+                    </p>
+                        <p class="text-[11px] text-slate-400 mt-1">
+                        Horario de Atención: Lunes a viernes de 9:00 am - 6:00 pm
+                    </p>
+                    <p class="text-[11px] text-slate-400 mt-2">
+                        Para mayor información, ingrese a:
+                   </p>
+
+                    <a
+                    href="https://www.ue.edu.pe/pregrado/internacional"
+                    target="_blank"
+                    class="text-red-400 text-xs hover:underline break-all">
+            
+                        www.ue.edu.pe/pregrado/internacional
+                    </a>
                 </div>
             </div>
             </div>
